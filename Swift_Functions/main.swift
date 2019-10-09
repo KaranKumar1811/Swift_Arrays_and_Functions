@@ -69,5 +69,21 @@ for row in twoDArray{
     }
 }
 
+// Working with Set
+var setOfNames = Set<String>() // Declaring the Set
 
+setOfNames.insert("Karan Kumar")
+setOfNames.insert("Sandeep")        // Inserting data to set
+setOfNames.insert("Ankita")
 
+var setofCountry = Set<String>()
+
+setofCountry.insert("Canada")
+setofCountry.insert("USA")
+setofCountry.insert("India")
+
+print(setOfNames.union(setofCountry)) // Using union to join 2 sets
+
+for i in setOfNames{
+    print(i)  // Printing data of set of Names
+}

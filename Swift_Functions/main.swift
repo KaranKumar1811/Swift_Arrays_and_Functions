@@ -22,15 +22,22 @@ arr.append(17)
 arr.append(18)
 arr.append(19)
 
-for i in 0...9
+
+for i in arr
 {
-    print(arr[i])
+    print(i)
 }
 
-/*
-for i in 0..<arr.count
+
+/*for i in 0...9
 {
-    print(arr[i])           Print array elements using count
+    print(arr[i])
+}*/
+
+/*
+for i in 0..<arr.count      //Arr.count returns the size of array
+{
+    print(arr[i])           //Print array elements using count
 }*/
 
 
@@ -42,3 +49,25 @@ print(arr)
 
 var b=Array.init(repeating: 0, count: 5)
 print(b[4])
+
+// declaring 2-D Array
+var twoDArray = [[Int]]()
+    
+    
+
+twoDArray.append([1,2,3])
+twoDArray.append([4,5,6])
+twoDArray.append([7,8,9])
+
+print(twoDArray[0][0]) // print values of 2-D Array using index.
+
+for row in twoDArray{
+    print("")
+    for item in row
+    {
+        print(item, separator: "", terminator: "")  // print data of 2-D array in form of Matrix
+    }
+}
+
+
+

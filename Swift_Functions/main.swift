@@ -81,9 +81,49 @@ var setofCountry = Set<String>()
 setofCountry.insert("Canada")
 setofCountry.insert("USA")
 setofCountry.insert("India")
-
+setofCountry.insert("India") // this wont add india to set because set doesn't allow Dublicate entries and india is already exist in Set
 print(setOfNames.union(setofCountry)) // Using union to join 2 sets
 
+
+print(setofCountry.sorted()) // .sorted is used to print sorted data
 for i in setOfNames{
     print(i)  // Printing data of set of Names
 }
+
+
+// Working with Dictionary
+
+
+//var dictCountry = Dictionary<Int, String>() // one technique For Declaring Dictionary
+
+//var dictCountry = [Int: String]()    // another way of declaring Dictionary
+
+var dictCountry = [1:"Usa", 2:"Canada"]  // if we know the values declare like this
+
+//dictCountry.count // this will retuen the size of dictonary
+
+dictCountry.updateValue("India", forKey: 4) // update the values in dictionary using key
+dictCountry.updateValue("UK", forKey: 5)
+dictCountry.updateValue("Test", forKey: 6)
+dictCountry.removeValue(forKey: 6) // remove entry from dictionary
+for item in dictCountry{
+    print(item)
+}
+
+
+
+for (k,v) in dictCountry
+{
+    print(k,v, separator: "             ", terminator: "\n") // printing key and values with whitespace in them
+}
+
+
+for(_,v) in dictCountry
+{
+    print(v, separator: "               ", terminator: "\n") // Printing  only values of dictionary
+}
+
+var ar1=[1,2,0,5,4,3]
+var ar2=["B","C","A","F","E","D"]
+
+	

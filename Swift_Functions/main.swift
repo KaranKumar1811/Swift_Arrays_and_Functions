@@ -123,8 +123,7 @@ for(_,v) in dictCountry
     print(v, separator: "               ", terminator: "\n") // Printing  only values of dictionary
 }
 
-var ar1=[1,2,0,5,4,3]
-var ar2=["B","C","A","F","E","D"]
+
 
 func demo(of a1:Int, and b1: Int) -> Int // of , and are used in arguments as lables. see calling of this function in line 133 to understand.
 {
@@ -169,6 +168,28 @@ func demo5(x: Int...)        //over loading function
     }
 }
 demo5(x: 12,32,43,56)
+
+
+
+var ar1=[1,2,0,5,4,3]
+var ar2=["B","C","A","F","E","D"]
+
+var prob = [Int:String]()
+
+for i in ar1
+{
+    for j in ar2
+    {
+        prob.updateValue(j, forKey: i)
+        break
+    }
+}
+
+
+for item1 in prob{
+ print(item1)
+}
+
 
 
 

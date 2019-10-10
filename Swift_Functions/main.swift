@@ -126,4 +126,52 @@ for(_,v) in dictCountry
 var ar1=[1,2,0,5,4,3]
 var ar2=["B","C","A","F","E","D"]
 
-	
+func demo(of a1:Int, and b1: Int) -> Int // of , and are used in arguments as lables. see calling of this function in line 133 to understand.
+{
+        return a1+b1
+}
+
+var x=demo(of: 20,and: 30)
+print("Sum : \(x)")
+
+
+func swap(a11: inout Int, b11: inout Int)
+{
+    let temp=b11
+    b11=a11
+    a11=temp
+}
+
+var a=10
+var c=20
+
+swap(&a, &c)
+print("a :\(a)","c: \(c)")
+
+
+
+
+
+func demo5(x: String...)        //String(or anyother data type)... is used to pass n number of arguments in a function
+{                                  // print works like this using unlimited number of arguments
+    for s in x
+    {
+        print(s)
+    }
+}
+
+demo5(x: "Hello","Karan Kumar","Swift")
+
+func demo5(x: Int...)        //over loading function
+{
+    for s in x
+    {
+        print(s)
+    }
+}
+demo5(x: 12,32,43,56)
+
+
+
+
+

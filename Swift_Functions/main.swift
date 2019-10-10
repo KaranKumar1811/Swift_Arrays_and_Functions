@@ -130,7 +130,6 @@ func demo(of a1:Int, and b1: Int) -> Int // of , and are used in arguments as la
 {
         return a1+b1
 }
-
 var x=demo(of: 20,and: 30)
 print("Sum : \(x)")
 
